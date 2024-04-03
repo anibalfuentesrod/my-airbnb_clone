@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Airbnb Clone - Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            header {
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To My Simple Airbnb</h1>
+           <button id="add-property-botton" onclick="redirectToPropertyForm()">Add Property</button>
+        </header>
+
+        <main>
+            <section id="search">
+                <h2>Find your perfect stay</h2>
+                <form id="search-form">
+                    <input type="text" id="location" placeholder="Location">
+                    <input type="date" id="chekin" placeholder="Check-in date">
+                    <input type="date" if="checkout" placeholder="Check-out date">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+                <!--More property cards that i need to add-->
+                <div class="property-card">
+                    <a href="property_details.html">
+                        <img src="https://www.palmbeachpost.com/gcdn/presto/2021/01/11/NPBD/2732f93f-e683-41da-8a77-35e11c50bb8c-PBN_535_N_County_Rd_Pool_SmRes.jpg?crop=1315,740,x0,y0&width=660&height=372&format=pjpg&auto=webp" alt="Property 1">
+                        <h3>California Mansion</h3>
+                        <p>La Mansión Sunset Crest se alza
+                         majestuosa sobre una colina en lo alto de las exuberantes 
+                         laderas de Hollywood Hills, California. Con una arquitectura 
+                         moderna y elegante, esta residencia de lujo combina líneas 
+                         limpias y materiales de alta calidad para crear una estética
+                          impresionante y contemporánea....</p>
+                        <button>Book Now</button>
+                    </a>
+                
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy: 2024 Simple Airbnb Clone</p>
+        </footer>
+
+        <scrip src="scripts.js"></scrip>
+        <script>
+            function redirectToPropertyForm() {
+                window.location.href = "property_form.html";
+            }
+        </script>
+
+    </body>
+</html>

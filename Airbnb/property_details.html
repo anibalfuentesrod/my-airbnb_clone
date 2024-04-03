@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>California Mansion</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            header {
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>House Information</h1>
+            <nav>
+                <!--Agrega enlaces de navegation-->
+            </nav>
+        </header>
+
+        <main>
+            <section id="property_details">
+                <div class="property-images">
+                    <img src="https://www.palmbeachpost.com/gcdn/presto/2021/01/11/NPBD/2732f93f-e683-41da-8a77-35e11c50bb8c-PBN_535_N_County_Rd_Pool_SmRes.jpg?crop=1315,740,x0,y0&width=660&height=372&format=pjpg&auto=webp" alt="Property 1">
+                    <!--agrega otras img-->
+                </div>
+                <div class="property-info">
+                    <h2>California Mansion</h2>
+                    <p>
+                        La Mansión Sunset Crest se alza majestuosa sobre 
+                        una colina en lo alto de las exuberantes laderas 
+                        de Hollywood Hills, California. <br>Con una arquitectura 
+                        moderna y elegante, esta residencia de lujo combina 
+                        líneas limpias y materiales de alta calidad para crear 
+                        una estética impresionante y contemporánea.</p>
+                        <p>
+                            Al entrar por las puertas dobles de vidrio, 
+                            los visitantes son recibidos por un vestíbulo 
+                            luminoso y espacioso, adornado con suelos de 
+                            mármol italiano y una espectacular escalera de 
+                            caracol que se eleva hacia arriba. Las paredes 
+                            de cristal enmarca vistas panorámicas de la ciudad de Los Ángeles 
+                            y el resplandor dorado del sol poniente.
+                        </p>
+
+                        <p>La mansión cuenta con múltiples salas de estar, 
+                            cada una diseñada para el máximo confort y estilo. 
+                            La sala principal presenta techos altos y ventanales 
+                            que inundan el espacio con luz natural, mientras que 
+                            una chimenea de mármol italiano añade un toque de calidez y 
+                            elegancia. Una sala de medios completamente equipada ofrece 
+                            un refugio para el entretenimiento, con asientos de cuero 
+                            reclinables y una pantalla de cine de última generación.
+
+                            <br>La cocina gourmet es un sueño para cualquier chef, 
+                            equipada con electrodomésticos de acero inoxidable de 
+                            última generación, encimeras de granito pulido y una isla 
+                            central que proporciona espacio adicional para preparar y 
+                            servir. El comedor formal adyacente ofrece un ambiente 
+                            sofisticado para cenas elegantes, con vistas a un patio 
+                            ajardinado que brinda la oportunidad de disfrutar de comidas 
+                            al aire libre bajo las estrellas de California.</p>
+
+                            <p>Location: <span id="location">California</span></p>
+                            <p>Price: $406 per night</p>
+                            <p>Rating: 4.5/5</p>
+                            <buttom class="book-now" onclick="redirectToConfirmationPage()">Book Now</buttom>
+
+                            <script>
+                                function redirectToConfirmationPage() {
+                                    window.location.href = "purchase_confirmation.html";
+                                }
+                            </script>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy: 2024 Simple Airbnb Clone</p>
+        </footer>
+    </body>
+</html>

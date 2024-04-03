@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property Form</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Add Property</h1>
+        </header>
+
+        <main>
+            <form id="property-form">
+                <label for="property-name">Property Name:</label><br>
+                <input type="text" id="property-name" name="property-name"><br><br>
+
+                <label for="property-description">Property Description:</laber><br>
+                <textarea id="property-description" name="property-description"></textarea><br><br>
+
+                <label for="property-images">Property Images:</label><br>
+                <input type="file" id="property-image" name="property-image"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Simple Airbnb Clone</p>
+        </footer>
+
+        <script>
+            document.getElementById('property-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var propertyName = document.getElementById('property-name').value;
+                var propertyDescription = document.getElementById('property-description').value;
+                var propertyImage = document.getElementById('property-image').value;
+
+                console.log("Property Name:", propertyName);
+                console.log("property Description", propertyDescription);
+                console.log("Property Image:", propertyImage);
+
+            });
+            </script>
+       
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

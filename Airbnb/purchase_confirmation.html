@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purchase Confirmation</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body, html {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url('https://media.istockphoto.com/id/835370890/photo/sunset-sunrise-with-clouds-light-rays-and-other-atmospheric-effect.jpg?s=612x612&w=0&k=20&c=zGDOBYVFY74wX2gUgkonYGtNl1zenev5mPotAqUlJbM=');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .confirmation-message {
+                text-align: center;
+                animation: confetti 4s ease infinite, returnToCenter 8s forwards;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+            
+
+            @keyframes confetti {
+                0% { transform: translate(-100vh) rotate(0deg); }
+                100% {transform: translate(100vh) rotate(720deg); }
+            }
+
+            @keyframes returnToCenter {
+                0% { transform: translateY(100vh); }
+                100% { transform: translate(0); }
+            }
+
+            .confirmation-message h1 {
+                color: #4CAF50;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="confirmation-message">
+            <h1>Congratulations on your purchase!</h1>
+            <p>Thank you for booking with us!!!!.</p>
+        </div>
+    </body>
+</html>
